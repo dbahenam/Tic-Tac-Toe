@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+    <link rel="stylesheet" href="styles/game.css" />
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="back-drop"></div>
+    <header>
+      <h1>Play a game of Tic Tac Toe</h1>
+      <p>Built with HTML, CSS and JavaScript!</p>
+      <hr />
+    </header>
+    <main>
+      <!--Overlay-->
+      <aside class="modal" id="config-overlay">
+        <h2>Choose your name</h2>
+        <form>
+          <div class="form-control">
+            <label for="player-name">Player name</label>
+            <input type="text" name="player-name" id="player-name" required />
+          </div>
+          <div id="form-buttons">
+            <button class="btn" type="reset" id="btn-cancel">Cancel</button>
+            <button class="btn" type="submit" id="btn-confirm">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="player-config">
+        <div class="player-card">
+          <h3>Player 1</h3>
+          <h2 id="first-name">Player name</h2>
+          <p>X</p>
+          <button class="btn" id="player-1" data-playerid="1">
+            Edit Player
+          </button>
+        </div>
+        <div class="player-card">
+          <h3>Player 2</h3>
+          <h2 id="second-name">Player name</h2>
+          <p>O</p>
+          <button class="btn" id="player-2" data-playerid="2">
+            Edit Player
+          </button>
+        </div>
+      </section>
+      <div id="start-game">
+        <p></p>
+        <button class="btn" id="start-game-btn">Start Game</button>
+      </div>
+      <section>
+        <aside class="modal" id="game-over">
+          <h2>There is a winner!</h2>
+        </aside>
+        <ol id="game-board">
+          <li data-col="1" data-row="1"></li>
+          <li data-col="2" data-row="1"></li>
+          <li data-col="3" data-row="1"></li>
+
+          <li data-col="1" data-row="2"></li>
+          <li data-col="2" data-row="2"></li>
+          <li data-col="3" data-row="2"></li>
+
+          <li data-col="1" data-row="3"></li>
+          <li data-col="2" data-row="3"></li>
+          <li data-col="3" data-row="3"></li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p> &#169 David Bahena Moctezuma</p>
+    </footer>
+  </body>
+</html>

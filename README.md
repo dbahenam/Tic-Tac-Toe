@@ -1,2 +1,5 @@
 # Tic-Tac-Toe
-Online tic-tac-toe game
+
+- Playable Tic-Tac-Toe game
+
+- Built with only HTML, CSS and JavaScript

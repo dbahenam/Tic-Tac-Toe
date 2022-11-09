@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  color: white;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  background-color: #2f7c78;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+#back-drop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+@media (min-width: 48rem) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem); /*middle of the screen minus 20rem*/
+  }
+}
+
+#config-overlay {
+  text-align: center;
+}
+#config-overlay h2 {
+  margin: 0.5rem 0;
+}
+.form-control {
+  margin: 0.5rem 0;
+}
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-control input {
+  font: inherit;
+  border: 1px solid rgb(204, 204, 204);
+  width: 15rem;
+  padding: 0.35rem;
+}
